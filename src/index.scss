@@ -28,6 +28,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+    
+    :hover{
+      opacity: 0.5;
+      cursor: pointer;
+      font-size: 20px;
+    }
     
   }
   .nav_right{
@@ -43,6 +50,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+
+    :hover{
+      opacity: 0.5;
+      cursor: pointer;
+      font-size: 20px;
+    }
   }
 }
 
@@ -51,7 +65,22 @@ body {
   top: 100px;
   width: 100%;
   height: 600px;
-  background-color: lightgrey;
+  background-color: white;
+
+  .first {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    bottom: 20%;
+    width: 40%;
+    height: 20%;
+    z-index: 12;
+    background-color: none;
+    background-image: url(https://i.imgur.com/KPzCX45.png);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    
+  }
 
   .second {
     position: absolute;
@@ -59,29 +88,27 @@ body {
     top: 15%;
     width: 600px;
     height: 400px;
-    background-color: white;
-    border-left: 235px solid white;
-    border-right: 235px solid white;
+    background-color: #f6f6f6;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
+    background-image: url(https://i.pinimg.com/564x/38/49/a6/3849a6ea65c180ac451d2050f596f5ee.jpg);
+    background-repeat: no-repeat;
     z-index: 10;
-    
 
-    img {
-      width: 100%;
-      height: 380px;
-      overflow: hidden;
-      padding: 0;
-      margin: 0;
+    :hover {
+      z-index: 15;
     }
+    
 
   }
     .third {
       position: absolute;
-      right: 5%;
+      right: 1%;
       top: 5%;
       bottom: 5%;
-      width: 800px;
+      width: 600px;
       height: auto;
       background-color: #cbdbc5;
       border: 10px solid white;
@@ -97,12 +124,140 @@ body {
       z-index: 12;
       border: 10px solid white;
       display:flex;
-
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      
       p {
-        align-self: center;
-        flex-basis: 100%;
+        margin-left: 5%;
+        font-size: 35px;
+
+        &:hover {
+          cursor: pointer;
+          font-size: 37px;
+          opacity: 0.5;
+        }
+      }
+      span {
+        margin-left: 5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+        color: black;
+
+        &:hover {
+          cursor:pointer;
+          font-size: 20px;
+          color: darkgreen;
+        }
       }
     }
-  
+}
+
+.second_container {
+  position: relative;
+  top: 70px;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+
+  .first {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 400px;
+    height: 300px;
+    z-index: 12;
+    background-color: none;
+    background-image: url(https://i.imgur.com/KPzCX45.png);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+  }
+
+  .second {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 500px;
+    height: 300px;
+    background-color: #f6f6f6;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    background-image: url(https://i.pinimg.com/564x/dd/8d/cb/dd8dcb4cb4361596b01d326d58be8d86.jpg);
+    background-repeat: no-repeat;
+    z-index: 15;
+  }
+
+  .third {
+    position: absolute;
+    left: 0;
+    width: 55%;
+    height: 600px;
+    background-color: lightgrey;
+  }
+
+  .fourth {
+    position: absolute;
+    left: 63%;
+    top: 20%;
+    height: 450px;
+    width: 300px;
+    background-color: none;
+
+    h2{
+      margin-left: 5%;
+    }
+    p{
+      margin-left: 5%;
+      font-size: 15px;
+    }
+  }
+
+.fifth {
+  position: absolute;
+  right: 20%;
+  top: 5%;
+  opacity: 0.3;
+}
+}
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  right:0;
+  width: 20%;
+  height: 50px;
+  background-color: rgba(2, 48, 27, 0.5);
+  font-size: 15px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.side_menu {
+  position: fixed;
+  left: 95%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }
  
